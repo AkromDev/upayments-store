@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-type Product = {
+export type Product = {
   createdAt: string;
   name: string;
   avatar: string;

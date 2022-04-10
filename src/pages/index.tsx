@@ -1,9 +1,16 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import ProductCard from 'src/components/ProductCard';
+import { useQuery } from 'react-query';
+import { fetchProducts } from 'src/apis/fetchProducts';
+import ProductCard, { Product } from 'src/components/ProductCard';
 import productsJson from 'src/data/products.json';
 
 const Home: NextPage = () => {
+  const { isLoading, isFetching, isError, data } = useQuery(
+    'products',
+    fetchProducts
+  );
+
   return (
     <div className="min-h-screen py-2">
       <Head>
@@ -16,10 +23,20 @@ const Home: NextPage = () => {
           <a href="">UPayments Store</a>
           <a href="">Register</a>
         </div>
+        {isLoading && <p className="my-4 text-center text-xl">Loading ...</p>}
+        {!isLoading && isFetching && (
+          <p className="my-4 text-center text-xl">Fetching ...</p>
+        )}
+        {isError && !isFetching && (
+          <p className="my-4 text-center text-xl">
+            Error occured while fetching ...
+          </p>
+        )}
         <div className="my-4 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {productsJson.products.map((product) => (
-            <ProductCard product={product} key={product.id} />
-          ))}
+          {Array.isArray(data) &&
+            data.map((product: Product) => (
+              <ProductCard product={product} key={product.id} />
+            ))}
         </div>
       </main>
     </div>

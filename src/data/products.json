@@ -1,0 +1,103 @@
+{
+   "products": [
+      {
+         "createdAt":"2022-03-26T15:12:50.845Z",
+         "name":"Apple MacBook",
+         "avatar":"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-spacegray-select-202110_GEO_TR?wid=1808&hei=1680&fmt=jpeg&qlt=80&.v=1633657407000",
+         "id":"17",
+         "price":"1999",
+         "category":"electronics",
+         "description":"of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy",
+         "developerEmail":"salikalper@gmail.com"
+      },
+      {
+         "createdAt":"2022-03-30T14:09:48.510Z",
+         "name":"Title 5",
+         "avatar":"https://designidentity.com.au/wp-content/uploads/2018/08/pv_P82_jan17-107.jpg",
+         "id":"19",
+         "Price":"65",
+         "developerEmail":"victor_naz@hotmail.com",
+         "description":"Test 555 test 555 test 555",
+         "price":"65",
+         "category":"furnitures"
+      },
+      {
+         "createdAt":"2022-04-01T16:15:00.136Z",
+         "name":"product 1234",
+         "avatar":"https://designidentity.com.au/wp-content/uploads/2018/08/pv_P82_jan17-107.jpg",
+         "id":"34",
+         "description":"iuyt iuyt iuyt iuyt iuy tiu yti uyt iuyt iuy t",
+         "price":"12345",
+         "category":"category"
+      },
+      {
+         "createdAt":"2022-04-02T04:00:37.323Z",
+         "name":"product 123",
+         "avatar":"https://gorilasoftware.com.br/wp-content/uploads/2021/11/Lorem-Ipsum-768x492-1.png",
+         "id":"35",
+         "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+         "price":"2",
+         "category":"all"
+      },
+      {
+         "createdAt":"2022-04-02T15:27:54.188Z",
+         "name":"product 123",
+         "avatar":"https://gorilasoftware.com.br/wp-content/uploads/2021/11/Lorem-Ipsum-768x492-1.png",
+         "id":"36",
+         "description":"hgfjhgfjhgf jhg fjhgf",
+         "price":"4",
+         "category":"mens-clothings"
+      },
+      {
+         "createdAt":"2022-04-02T13:54:15.562Z",
+         "name":"product 123",
+         "avatar":"https://my-blogger.nl/wp-content/uploads/2019/05/test_ttp_big.jpg",
+         "id":"37",
+         "description":"sdf vsdfvs dfv sdfv s",
+         "price":"7",
+         "category":"mens-clothings"
+      },
+      {
+         "createdAt":"2022-04-01T21:57:47.017Z",
+         "name":"product 123",
+         "avatar":"https://my-blogger.nl/wp-content/uploads/2019/05/test_ttp_big.jpg",
+         "id":"38",
+         "description":"sdf vsdfvs dfv sdfv s",
+         "price":"7",
+         "category":"mens-clothings"
+      },
+      {
+         "createdAt":"2022-04-01T15:46:29.978Z",
+         "name":"product 123",
+         "avatar":"https://my-blogger.nl/wp-content/uploads/2019/05/test_ttp_big.jpg",
+         "id":"39",
+         "description":"fgd fg dfg dgf",
+         "price":"65",
+         "category":"accessories"
+      },
+      {
+         "createdAt":"2022-04-03T02:54:20.976Z",
+         "name":"test",
+         "avatar":"test",
+         "id":"40",
+         "description":"test",
+         "price":"2",
+         "category":"electronics"
+      },
+      {
+         "createdAt":"2022-04-07T22:06:50.247Z",
+         "name":"New product",
+         "avatar":"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+         "id":"41",
+         "description":"test",
+         "price":"10",
+         "category":"furnitures"
+      },
+      {
+         "createdAt":"2022-04-09T06:09:23.684Z",
+         "name":"Arnold Braun",
+         "avatar":"https://cdn.fakercloud.com/avatars/mvdheuvel_128.jpg",
+         "id":"42"
+      }
+   ]
+}

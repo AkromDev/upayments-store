@@ -1,16 +1,29 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { ReactNode } from 'react';
-import { useQuery } from 'react-query';
+import { useMutation, useQuery } from 'react-query';
+import { toast } from 'react-toastify';
+import deleteProduct from 'src/apis/deleteProduct';
 import { fetchProductDetails } from 'src/apis/fetchProductDetails';
 import MainLayout from 'src/layout/MainLayout';
 
 export default function ProductDetails() {
   const { query } = useRouter();
-  const { isLoading, isFetching, isError, data } = useQuery(
+  const { isLoading, isError, data } = useQuery(
     ['product', { id: query.id }],
     fetchProductDetails
   );
+
+  const router = useRouter();
+  const mutation = useMutation(deleteProduct, {
+    onSuccess: () => {
+      toast.success('Deleting the product is successful');
+      router.push('/');
+    },
+    onError: () => {
+      toast.error('Deleting the product failed');
+    },
+  });
 
   if (isLoading) {
     return <p>Loading ...</p>;
@@ -50,6 +63,13 @@ export default function ProductDetails() {
         <h2 className="mb-2 text-xl font-semibold">Description</h2>
         <p className="text-gray-500">{data.description}</p>
       </section>
+      <button
+        className="form-input mt-10 bg-red-500 font-semibold text-white disabled:opacity-40"
+        disabled={mutation.isLoading}
+        onClick={() => mutation.mutate(data.id)}
+      >
+        Delete
+      </button>
     </main>
   );
 }

@@ -21,7 +21,7 @@ export default function ProductCard(props: Props) {
   const { product } = props;
 
   return (
-    <div style={{ width: 150 }}>
+    <div style={{ width: 144 }}>
       <div className="rounded-md bg-white py-4 px-4 hover:shadow-md">
         <Link href={`/product/${product.id}`}>
           <a>
@@ -38,7 +38,7 @@ export default function ProductCard(props: Props) {
       </div>
 
       <h2 className="mt-2 text-left text-sm">{product.name}</h2>
-      <p className="mt-2 text-sm">$ {product.price}</p>
+      <p className="mt-2 text-center text-sm">$ {product.price}</p>
     </div>
   );
 }

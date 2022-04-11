@@ -15,6 +15,9 @@ export default function ProductDetails() {
   if (isLoading) {
     return <p>Loading ...</p>;
   }
+  if (!isLoading && isError) {
+    return <p>Error occurred while fetching products ...</p>;
+  }
   if (!isLoading && !data) {
     return (
       <p>
@@ -36,7 +39,9 @@ export default function ProductDetails() {
           />
         </div>
         <div className="flex flex-col justify-between">
-          <h1 className="text-4xl font-semibold">{data.name}</h1>
+          <h1 className="text-xl font-semibold sm:text-2xl md:text-4xl">
+            {data.name}
+          </h1>
           <p className="text-xl">$ {data.price}</p>
         </div>
       </section>

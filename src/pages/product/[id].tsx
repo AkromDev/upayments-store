@@ -39,7 +39,7 @@ export default function ProductDetails() {
     );
   }
   return (
-    <main>
+    <main className="mx-auto max-w-2xl">
       <section className="flex gap-6">
         <div style={{ width: 200 }} className="rounded-md bg-white py-4 px-4">
           <Image

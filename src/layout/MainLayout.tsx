@@ -20,7 +20,7 @@ export default function MainLayout({
           <a>Create</a>
         </Link>
       </div>
-      <div className={`max-w-4xl ${contentClassname}`}>{children}</div>
+      <div className={`w-full max-w-4xl ${contentClassname}`}>{children}</div>
     </div>
   );
 }

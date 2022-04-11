@@ -21,7 +21,7 @@ export default function ProductCard(props: Props) {
   const { product } = props;
 
   return (
-    <div style={{ width: 144 }}>
+    <div style={{ width: 144, marginInline: 'auto' }}>
       <div className="rounded-md bg-white py-4 px-4 hover:shadow-md">
         <Link href={`/product/${product.id}`}>
           <a>
